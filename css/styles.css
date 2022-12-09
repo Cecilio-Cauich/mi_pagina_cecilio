@@ -17,6 +17,7 @@ body {
   height: 100vh;
   background-color: #0E2E3B;
   color:whitesmoke;
+  
 }
 .navbar{
   display: flex;
@@ -28,7 +29,7 @@ body {
   margin-top: -7px;
 }
 .brand span{
-  color:#F2DCBB;
+  color:#CFFF8D;
 }
 
 .menu {
@@ -46,14 +47,16 @@ body {
   padding:10px 20px ;
 }
 .menu .active{
-  color:#F2DCBB
+  color:#CFFF8D
+  
 }
 
 .menu a:hover{
-  background-color: #F9F7CF;
-  color:#0E2E3B ;
+  /* background-color: #F9F7CF; */
+  font-size: 17px;
+  color:#CFFF8D ;
   transition: ease-in .4s;
-  border-radius: 15px;
+  
 }
  /* principal */
 .main{
@@ -62,4 +65,35 @@ body {
   height: 8vh;
   display: grid;
   grid-template-columns: repeat(2,1fr);
+  align-items: center;
+}
+
+.main img{
+  width: 350px;
+  height: 500px;
+  border-radius: 5px;
+  border: 5px solid #CFFF8D;
+}
+
+h1{
+  font-size: 3em;
+}
+
+span{
+  color:#CFFF8D ;
+}
+
+.download-cv{
+  margin-top: 15px;
+  padding:10px 20px;
+  background-color:#CFFF8D;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 1px 3px 11px -5px rgba(207, 255, 141, .69);
+}
+
+.download-cv:hover{
+  background-color: #ffff;
+  box-shadow: none;
+  
 }
