@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Source+Sans+Pro:wght@300&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -96,4 +96,107 @@ span{
   background-color: #ffff;
   box-shadow: none;
   
+}
+
+/* acerca de */
+.about{
+  display: grid;
+  grid-template-columns: repeat(10,2fr);
+  width: 100vw;
+  align-items: center;
+  /* background: #166678; */
+}
+
+.about img{
+  width: 100%;
+  height: 100%;
+  grid-column: 1/5;
+}
+
+.about-info{
+  grid-column: 5/10;
+  padding: 3em;
+}
+
+.about-info h2{
+  font-size: 2em;
+  color: #166678;
+}
+
+.divider {
+  height: 4px;
+  width: 60px;
+  background-color:#CFFF8D;
+  margin-top: 10px;
+  margin-bottom: 2.5em;
+}
+
+.about-info h3{
+  margin-bottom: 1em;
+}
+
+/* .cont-li{
+  display: flex;
+} */
+
+/* about me habilidades tecnicas */
+.cont-tecnicas{
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  
+}
+
+.cont-li{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+
+.cont-li img{
+  width: 35px;
+  height: 35px;
+}
+.i_java{
+  grid-row: 2 / 3;
+  grid-column: 1 / 2;
+}
+.i_python{
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+}
+
+.i_mysql{
+  grid-row: 2 / 3;
+  grid-column: 3 / 4;
+}
+
+.i_oracle{
+  grid-row: 2 / 3;
+  grid-column: 4 / 5;
+}
+.cont-li p{
+  font-size: 1em;
+}
+
+.front p{
+  /* font-family: 'Source Sans Pro', sans-serif;  */
+  color: #2B3A55;
+  font-size: 1em;
+}
+.back p{
+  /* font-family: 'Source Sans Pro', sans-serif;  */
+  color: #285430;
+  font-size: 1em;
+}
+
+/* about me habilidades blandas */
+.cont-blad{
+  display: flex;
+  
+}
+.titulo-habbland{
+  margin-top: 25px;
 }
