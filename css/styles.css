@@ -12,7 +12,7 @@ body {
 }
 
 /* encabezado */
-.wrapper {
+.wrapper,.portfolio {
   width: 100vw;
   height: 100vh;
   background-color: #0E2E3B;
@@ -140,7 +140,7 @@ span{
 } */
 
 /* about me habilidades tecnicas */
-.cont-tecnicas{
+.cont-tec{
   list-style: none;
   display: grid;
   grid-template-columns: repeat(5,1fr);
@@ -193,10 +193,73 @@ span{
 }
 
 /* about me habilidades blandas */
-.cont-blad{
+.cont-bland{
   display: flex;
   
 }
 .titulo-habbland{
   margin-top: 25px;
 }
+
+/* portafolio */
+.portfolio-heading{
+  width: 100vw;
+  padding: 5em;
+}
+
+.portfolio-heading h2{
+  font-size: 2.5em;
+}
+
+.portfolio .container{
+  width: 80vw;
+  height: 80vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.card{
+  width: 350px;
+  height: 320px;
+  background-color: #166678;
+  border-radius: 3px;
+  padding: 10px;
+  margin: 5px;
+
+}
+
+.card__image{
+  width: 100%;
+  height: 200px;
+  background-image: url("../img/gatos_aleatorios.png");
+  background-size:cover;
+}
+
+.card__title{
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.card__title{
+  font-size: 14px;
+}
+
+
+.card__projects-links{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card__projects-links a{
+  color: #ffff;
+  text-decoration: none;
+}
+
+.card__projects-links i{
+  font-size: 1.5em;
+}
+
+

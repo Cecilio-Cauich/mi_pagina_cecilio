@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>portfolio</title>
     <link rel="stylesheet" href="css/styles.css" />
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
       integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
       crossorigin="anonymous"
-    />
+    /> -->
+    <script src="https://kit.fontawesome.com/9d6d509089.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <div class="wrapper">
@@ -23,8 +24,8 @@
 
           <ul class="menu">
             <li><a href="#" class="active">Home</a></li>
-            <li><a href="#">About Me</a></li>
-            <li><a href="#">Portafolio</a></li>
+            <li><a href="#section_about">Sobre mi</a></li>
+            <li><a href="#section_portfolio">Portafolio</a></li>
             <li><a href="#">Contact</a></li>
           </ul>
         </nav>
@@ -48,7 +49,7 @@
       </main>
     </div>
     <!-- about -->
-    <div class="about">
+    <div class="about" id="section_about">
       <img src="./img/aboutme.jpg" alt="cecilio gaspar about" />
 
       <div class="about-info">
@@ -57,7 +58,7 @@
 
         <h3>Habilidades Técnicas</h3>
 
-        <div class="cont-tecnicas">
+        <div class="cont-tec">
           <div class="cont-li front i_html">
             <img src="./icons/html-5.png" alt="" />
             <p>HTML</p>
@@ -100,7 +101,7 @@
         </div>
 
         <h3 class="titulo-habbland">Habilidades Blandas</h3>
-        <div class="cont-blad" >
+        <div class="cont-bland">
           <div class="cont-li">
             <img src="./icons/liderazgo.png" alt="" />
             <p>Liderazgo</p>
@@ -120,10 +121,50 @@
             <img src="./icons/meditacion.png" alt="" />
             <p>Gestion de estrés</p>
           </div>
-
-
         </div>
       </div>
     </div>
+
+    <div class="portfolio" id="section_portfolio">
+      <div class="portfolio-heading">
+        <h2>Mi Portafolio</h2>
+        <div class="divider"></div>
+      </div>
+
+      <div class="container">
+
+        <div class="card">
+          <div class="card__image"></div>
+          <div class="card__title">
+            <h2>Maquetación</h2>
+          </div>
+          <div class="card__projects-links">
+            <a href="https://cecilio-corporativo-c6fa6b.netlify.app/" target="_blank">
+              <i class="fa-solid fa-earth-americas"></i>
+            </a>
+            <a href="https://github.com/Cecilio-Cauich/pagina_corporativo.git" target="_blank">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card__image"></div>
+          <div class="card__title">
+            <h2>GATOS ALEATORIOS</h2>
+          </div>
+          <div class="card__projects-links">
+            <a href="https://wiwo-chnyuk-7439fc.netlify.app/" target="_blank">
+              <i class="fa-solid fa-earth-americas"></i>
+            </a>
+            <a href="https://github.com/Cecilio-Cauich/mchsaletrs.git" target="_blank">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    
   </body>
 </html>
