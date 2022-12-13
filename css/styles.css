@@ -202,6 +202,15 @@ span{
 }
 
 /* portafolio */
+
+.portfolio {
+  width: 100vw;
+  height: 1100px;
+  background-color: #0E2E3B;
+  color:whitesmoke;
+  
+}
+
 .portfolio-heading{
   width: 100vw;
   padding: 5em;
@@ -217,12 +226,14 @@ span{
   margin: 0 auto;
   display: flex;
   justify-content: center;
+  /* background-color: red; */
+  flex-wrap: wrap;
   
 }
 
 .card{
   width: 350px;
-  height: 320px;
+  height: 380px;
   background-color: #166678;
   border-radius: 3px;
   padding: 10px;
@@ -230,21 +241,26 @@ span{
 
 }
 
-.card__image{
+
+.card__image img{
   width: 100%;
   height: 200px;
-  background-image: url("../img/gatos_aleatorios.png");
   background-size:cover;
 }
 
+.card__image p{
+  display: none;
+}
 .card__title{
   padding: 20px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  /* justify-content: center; */
 }
 
 .card__title{
   font-size: 14px;
+  text-align:center;
 }
 
 
@@ -262,4 +278,22 @@ span{
   font-size: 1.5em;
 }
 
+/* contacto */
+.contacto{
+  display: flex;
+  height: 50px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.cont_ele {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
+  
+}
+.cont_ele i{
+  font-size: 1.5em;
+  color: #0E2E3B;
+  margin: 5px;
+}
